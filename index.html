@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ekta Kumrawat | Senior Content Writer & SEO Specialist | Jaipur</title>
+<meta name="description" content="Ekta Kumrawat is a Senior Content Writer with 5+ years of experience in SEO content, blogs, technical writing, and digital marketing. Boosted organic traffic by 40%.">
+<meta name="keywords" content="Ekta Kumrawat, Content Writer, SEO Writer, Blog Writer, Technical Writer, Jaipur, Freelance Writer">
+<meta name="author" content="Ekta Kumrawat">
+<meta property="og:title" content="Ekta Kumrawat — Senior Content Writer & SEO Specialist">
+<meta property="og:description" content="Words that rank. Content that converts. 5+ years of SEO-driven content across healthcare, tech, lifestyle & more.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+:root {
+  --bg: #faf7f3;
+  --dark: #12100e;
+  --ink: #1e1a17;
+  --warm-mid: #e9e0d5;
+  --warm-light: #f2ece4;
+  --accent: #c1440e;
+  --accent2: #e8956d;
+  --gold: #c49a3c;
+  --muted: #6b6057;
+  --light-muted: #a89d93;
+  --green: #2e6b4f;
+  --blue: #1e4e8c;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--ink); font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 300; line-height: 1.75; overflow-x: hidden; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--warm-light); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
+.cursor-dot { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; position: fixed; pointer-events: none; z-index: 9999; transform: translate(-50%,-50%); transition: transform 0.1s; }
+.cursor-ring { width: 36px; height: 36px; border: 1.5px solid var(--accent); border-radius: 50%; position: fixed; pointer-events: none; z-index: 9998; transform: translate(-50%,-50%); transition: all 0.18s ease; opacity: 0.5; }
+
+/* NAV */
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 500; display: flex; justify-content: space-between; align-items: center; padding: 1rem 5rem; background: rgba(250,247,243,0.94); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(180,160,140,0.2); transition: box-shadow 0.3s; }
+nav.scrolled { box-shadow: 0 4px 30px rgba(0,0,0,0.07); }
+.nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 700; color: var(--ink); text-decoration: none; }
+.nav-logo span { color: var(--accent); }
+.nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+.nav-links a { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+.nav-links a:hover { color: var(--accent); }
+.nav-cta { background: var(--accent) !important; color: #fff !important; padding: 0.5rem 1.3rem; border-radius: 2px; }
+.nav-cta:hover { background: var(--ink) !important; }
+
+/* HERO */
+.hero { min-height: 100vh; display: grid; grid-template-columns: 55% 45%; padding-top: 76px; position: relative; overflow: hidden; }
+.hero-bg-text { position: absolute; top: 50%; left: -2%; transform: translateY(-50%); font-family: 'Cormorant Garamond', serif; font-size: clamp(8rem,18vw,18rem); font-weight: 700; font-style: italic; color: transparent; -webkit-text-stroke: 1px rgba(193,68,14,0.07); line-height: 1; pointer-events: none; white-space: nowrap; z-index: 0; }
+.hero-left { display: flex; flex-direction: column; justify-content: center; padding: 5rem 3rem 5rem 6rem; position: relative; z-index: 1; }
+.hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(46,107,79,0.08); border: 1px solid rgba(46,107,79,0.2); color: var(--green); padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 2rem; width: fit-content; }
+.hero-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(3.5rem,6vw,6.5rem); font-weight: 700; line-height: 0.95; margin-bottom: 0.5rem; }
+.hero-name em { font-style: italic; color: var(--accent); display: block; }
+.hero-tagline { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.1rem,2vw,1.45rem); font-style: italic; color: var(--muted); margin-bottom: 2rem; }
+.typewriter-wrap { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 1rem; color: var(--muted); margin-bottom: 2.5rem; }
+.typewriter-wrap i { color: var(--accent); }
+#typewriter { font-weight: 500; color: var(--ink); }
+.cursor-blink { animation: blink 1s infinite; color: var(--accent); }
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+.hero-summary { font-size: 0.95rem; color: var(--muted); max-width: 440px; margin-bottom: 3rem; line-height: 1.85; }
+.hero-stats { display: flex; gap: 2.5rem; margin-bottom: 3rem; padding: 1.5rem 0; border-top: 1px solid var(--warm-mid); border-bottom: 1px solid var(--warm-mid); }
+.stat { display: flex; flex-direction: column; }
+.stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; font-weight: 700; color: var(--accent); line-height: 1; }
+.stat-label { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light-muted); margin-top: 0.2rem; }
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+.btn-primary { display: inline-flex; align-items: center; gap: 0.7rem; background: var(--accent); color: #fff; padding: 0.9rem 2rem; text-decoration: none; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; border-radius: 2px; transition: all 0.25s; border: none; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; }
+.btn-primary:hover { background: var(--ink); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(193,68,14,0.25); }
+.btn-outline { display: inline-flex; align-items: center; gap: 0.7rem; border: 1.5px solid var(--ink); color: var(--ink); padding: 0.9rem 2rem; text-decoration: none; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; border-radius: 2px; transition: all 0.25s; }
+.btn-outline:hover { background: var(--ink); color: #fff; transform: translateY(-2px); }
+.btn-resume { display: inline-flex; align-items: center; gap: 0.7rem; border: 1.5px solid var(--gold); color: var(--gold); padding: 0.9rem 2rem; text-decoration: none; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; border-radius: 2px; transition: all 0.25s; }
+.btn-resume:hover { background: var(--gold); color: #fff; transform: translateY(-2px); }
+
+.hero-right { background: var(--warm-mid); position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.hero-right-pattern { position: absolute; inset: 0; background-image: radial-gradient(circle, rgba(193,68,14,0.08) 1px, transparent 1px); background-size: 28px 28px; }
+.hero-right-content { position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1.2rem; padding: 3rem; }
+.info-card { background: var(--bg); padding: 1.5rem 2rem; border-radius: 4px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); display: flex; align-items: flex-start; gap: 1.2rem; animation: slideIn 0.6s ease both; }
+.info-card:nth-child(1){animation-delay:.3s}
+.info-card:nth-child(2){animation-delay:.5s;margin-left:2rem}
+.info-card:nth-child(3){animation-delay:.7s}
+.info-card:nth-child(4){animation-delay:.9s;margin-left:2rem}
+@keyframes slideIn { from{opacity:0;transform:translateX(30px)} to{opacity:1;transform:translateX(0)} }
+.info-icon { width: 42px; height: 42px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+.ic-gold{background:rgba(196,154,60,0.12);color:var(--gold)}
+.ic-red{background:rgba(193,68,14,0.1);color:var(--accent)}
+.ic-green{background:rgba(46,107,79,0.1);color:var(--green)}
+.ic-blue{background:rgba(30,78,140,0.1);color:var(--blue)}
+.info-card-title { font-weight: 600; font-size: 0.9rem; margin-bottom: 0.1rem; color: var(--ink); }
+.info-card-sub { font-size: 0.78rem; color: var(--light-muted); }
+
+/* MARQUEE */
+.marquee-bar { background: var(--ink); padding: 0.9rem 0; overflow: hidden; }
+.marquee-track { display: flex; gap: 3rem; animation: marquee 25s linear infinite; white-space: nowrap; }
+.marquee-track span { color: rgba(255,255,255,0.5); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; }
+.marquee-track .dot { color: var(--accent); font-size: 0.5rem; }
+@keyframes marquee { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+
+/* SECTIONS */
+.section { padding: 6rem 6rem; }
+.section-tag { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.8rem; font-weight: 600; }
+.section-tag::before { content: ""; display: block; width: 24px; height: 1.5px; background: var(--accent); }
+.section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem,4vw,3.5rem); font-weight: 700; line-height: 1.1; }
+
+/* ABOUT */
+.about { background: var(--warm-light); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+.about-text p { color: var(--muted); margin-bottom: 1.2rem; font-size: 0.95rem; }
+.about-traits { display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem; }
+.trait { display: flex; align-items: flex-start; gap: 1rem; background: var(--bg); padding: 1rem 1.5rem; border-radius: 4px; border-left: 3px solid var(--accent); transition: 0.2s; }
+.trait:hover { transform: translateX(4px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+.trait i { color: var(--accent); font-size: 1rem; width: 20px; text-align: center; margin-top: 0.1rem; flex-shrink: 0; }
+.trait-text { font-size: 0.88rem; font-weight: 600; color: var(--ink); }
+.trait-sub { font-size: 0.75rem; color: var(--light-muted); }
+
+/* ACHIEVEMENTS - GRID */
+.achievements { background: var(--dark); position: relative; overflow: hidden; }
+.achievements::before { content:""; position:absolute; top:-100px; right:-100px; width:500px; height:500px; border-radius:50%; background:radial-gradient(circle,rgba(196,154,60,0.08) 0%,transparent 70%); pointer-events:none; }
+.achievements .section-tag { color: var(--gold); }
+.achievements .section-tag::before { background: var(--gold); }
+.achievements .section-title { color: #fff; }
+
+/* 3 award cards top */
+.achievements-top-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; margin-top: 3rem; }
+/* 4 stat boxes bottom */
+.achievements-bottom-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.5rem; margin-top: 1.5rem; }
+
+.ach-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 2.5rem 2rem; position: relative; overflow: hidden; transition: all 0.3s; cursor: default; }
+.ach-card:hover { background: rgba(255,255,255,0.07); border-color: rgba(196,154,60,0.3); transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
+.ach-card::after { content:""; position:absolute; bottom:0; left:0; right:0; height:2px; background:linear-gradient(90deg,var(--gold),transparent); transform:scaleX(0); transform-origin:left; transition:transform 0.4s; }
+.ach-card:hover::after { transform: scaleX(1); }
+.ach-card.alt::after { background: linear-gradient(90deg, var(--accent2), transparent); }
+.ach-card.alt2::after { background: linear-gradient(90deg, #5dba8e, transparent); }
+.ach-icon { width: 60px; height: 60px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem; }
+.ach-icon-gold{background:rgba(196,154,60,0.12);color:var(--gold)}
+.ach-icon-red{background:rgba(193,68,14,0.12);color:var(--accent2)}
+.ach-icon-green{background:rgba(46,107,79,0.12);color:#5dba8e}
+.ach-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 600; margin-bottom: 0.5rem; }
+.lbl-gold{color:var(--gold)} .lbl-red{color:var(--accent2)} .lbl-green{color:#5dba8e}
+.ach-title { font-family: 'Cormorant Garamond', serif; font-size: 1.45rem; font-weight: 700; color: #fff; line-height: 1.3; margin-bottom: 0.8rem; }
+.ach-desc { font-size: 0.83rem; color: rgba(255,255,255,0.45); line-height: 1.7; }
+.ach-big-number { position: absolute; bottom: 1rem; right: 1.5rem; font-family: 'Cormorant Garamond', serif; font-size: 5rem; font-weight: 700; line-height: 1; color: rgba(255,255,255,0.03); pointer-events: none; }
+
+/* stat boxes */
+.ach-stat-box { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 2rem 1.5rem; text-align: center; transition: 0.3s; }
+.ach-stat-box:hover { border-color: rgba(196,154,60,0.3); background: rgba(255,255,255,0.06); }
+.ach-stat-num { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 0.4rem; }
+.ach-stat-label { font-size: 0.75rem; color: rgba(255,255,255,0.4); letter-spacing: 0.1em; text-transform: uppercase; }
+
+/* EXPERIENCE */
+.experience { background: var(--bg); }
+.exp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 3rem; }
+.exp-card { background: var(--warm-light); border: 1px solid var(--warm-mid); border-radius: 8px; padding: 2rem; position: relative; overflow: hidden; transition: all 0.3s; }
+.exp-card:hover { border-color: rgba(193,68,14,0.3); box-shadow: 0 10px 40px rgba(0,0,0,0.08); transform: translateY(-2px); }
+.exp-card.current { border-left: 4px solid var(--accent); }
+.exp-badge { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; padding: 0.3rem 0.8rem; border-radius: 50px; margin-bottom: 1rem; }
+.badge-current{background:rgba(193,68,14,0.1);color:var(--accent)}
+.badge-past{background:rgba(107,96,87,0.1);color:var(--muted)}
+.exp-role { font-family: 'Cormorant Garamond', serif; font-size: 1.45rem; font-weight: 700; margin-bottom: 0.25rem; }
+.exp-company { font-size: 0.82rem; color: var(--muted); display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem; }
+.exp-company i { color: var(--accent); font-size: 0.75rem; }
+.exp-date { font-size: 0.75rem; color: var(--light-muted); display: flex; align-items: center; gap: 0.4rem; margin-bottom: 1.5rem; }
+.exp-highlights { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; }
+.exp-highlights li { font-size: 0.83rem; color: var(--muted); padding-left: 1.2rem; position: relative; line-height: 1.6; }
+.exp-highlights li::before { content: "▸"; position: absolute; left: 0; color: var(--accent); }
+
+/* PORTFOLIO */
+.portfolio { background: var(--warm-light); }
+.portfolio-filter { display: flex; gap: 0.8rem; flex-wrap: wrap; margin: 1.2rem 0 2.5rem; }
+.filter-btn { background: transparent; border: 1.5px solid var(--warm-mid); color: var(--muted); padding: 0.45rem 1.2rem; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; border-radius: 50px; cursor: pointer; transition: all 0.2s; font-family: 'Plus Jakarta Sans', sans-serif; }
+.filter-btn:hover, .filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.portfolio-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.2rem; }
+.portfolio-card { background: var(--bg); border-radius: 8px; border: 1px solid rgba(180,160,140,0.2); text-decoration: none; color: var(--ink); display: flex; flex-direction: column; transition: all 0.3s; overflow: hidden; }
+.portfolio-card:hover { transform: translateY(-4px); box-shadow: 0 16px 50px rgba(0,0,0,0.1); border-color: var(--accent); }
+.portfolio-card:hover .card-arrow { background: var(--accent); color: #fff; }
+.card-top { padding: 1.8rem 1.8rem 1rem; flex: 1; }
+.card-category-badge { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.3rem 0.7rem; border-radius: 50px; margin-bottom: 1rem; }
+.cat-tech{background:rgba(30,78,140,0.08);color:var(--blue)}
+.cat-health{background:rgba(46,107,79,0.08);color:var(--green)}
+.cat-food{background:rgba(196,154,60,0.1);color:#8a6d15}
+.cat-luxury{background:rgba(193,68,14,0.08);color:var(--accent)}
+.cat-realestate{background:rgba(107,96,87,0.1);color:var(--muted)}
+.cat-doc{background:rgba(46,107,79,0.08);color:var(--green)}
+.card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 700; line-height: 1.4; margin-bottom: 0.5rem; }
+.card-bottom { padding: 0.9rem 1.8rem; border-top: 1px solid var(--warm-mid); display: flex; justify-content: space-between; align-items: center; }
+.card-domain { font-size: 0.72rem; color: var(--light-muted); display: flex; align-items: center; gap: 0.4rem; }
+.card-arrow { width: 28px; height: 28px; border-radius: 50%; background: var(--warm-mid); display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: var(--muted); transition: all 0.2s; }
+
+/* INDUSTRIES */
+.industries { background: var(--bg); }
+.industries-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1rem; margin-top: 3rem; }
+.industry-card { background: var(--warm-light); border: 1px solid var(--warm-mid); border-radius: 8px; padding: 1.8rem 1.5rem; text-align: center; transition: all 0.25s; }
+.industry-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0,0,0,0.07); }
+.industry-icon { font-size: 2rem; margin-bottom: 0.8rem; display: block; }
+.industry-name { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 0.2rem; }
+.industry-desc { font-size: 0.72rem; color: var(--light-muted); }
+
+/* SKILLS */
+.skills-section { background: var(--warm-light); }
+.skills-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+.skills-group-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--warm-mid); }
+.skills-group-icon { width: 38px; height: 38px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; }
+.sg-red{background:rgba(193,68,14,0.1);color:var(--accent)}
+.sg-gold{background:rgba(196,154,60,0.1);color:var(--gold)}
+.skills-group h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 700; }
+.skill-item { margin-bottom: 1.2rem; }
+.skill-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem; }
+.skill-name { font-size: 0.85rem; font-weight: 500; }
+.skill-pct { font-size: 0.75rem; color: var(--accent); font-weight: 600; }
+.skill-bar { height: 4px; background: var(--warm-mid); border-radius: 2px; overflow: hidden; }
+.skill-fill { height: 100%; background: linear-gradient(90deg,var(--accent),var(--accent2)); border-radius: 2px; width: 0; transition: width 1.2s ease; }
+.tools-grid { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 3rem; }
+.tool-tag { background: var(--bg); border: 1px solid var(--warm-mid); padding: 0.45rem 1rem; border-radius: 50px; font-size: 0.78rem; color: var(--muted); font-weight: 500; display: flex; align-items: center; gap: 0.4rem; transition: 0.2s; }
+.tool-tag:hover { border-color: var(--accent); color: var(--accent); background: rgba(193,68,14,0.05); }
+.tool-tag i { font-size: 0.7rem; color: var(--accent); }
+
+/* CLIENTS */
+.clients-section { background: var(--dark); }
+.clients-section .section-tag { color: var(--gold); }
+.clients-section .section-tag::before { background: var(--gold); }
+.clients-section .section-title { color: #fff; }
+.clients-subtitle { color: rgba(255,255,255,0.4); font-size: 0.9rem; margin-top: 0.5rem; }
+.clients-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; overflow: hidden; margin-top: 3rem; }
+.client-item { background: var(--dark); padding: 1.8rem 1.2rem; text-align: center; text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; transition: all 0.2s; }
+.client-item:hover { background: rgba(255,255,255,0.05); }
+.client-icon { font-size: 1.3rem; }
+.client-name { color: rgba(255,255,255,0.45); font-size: 0.8rem; font-weight: 500; transition: color 0.2s; }
+.client-item:hover .client-name { color: var(--gold); }
+
+/* CONTACT */
+.contact-section { background: linear-gradient(135deg,#1a0f0a 0%,#2d1408 50%,#1a0f0a 100%); padding: 7rem 6rem; position: relative; overflow: hidden; }
+.contact-section::before { content:""; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(ellipse at center,rgba(193,68,14,0.12) 0%,transparent 60%); pointer-events:none; }
+.contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; position: relative; z-index: 1; }
+.contact-left .section-tag { color: var(--gold); }
+.contact-left .section-tag::before { background: var(--gold); }
+.contact-left .section-title { color: #fff; margin-bottom: 1.2rem; }
+.contact-desc { color: rgba(255,255,255,0.5); font-size: 0.95rem; line-height: 1.8; }
+.contact-action-btns { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
+.contact-links { display: flex; flex-direction: column; gap: 1rem; }
+.contact-link { display: flex; align-items: center; gap: 1.2rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 1.2rem 1.5rem; text-decoration: none; color: #fff; transition: all 0.25s; cursor: pointer; }
+.contact-link:hover { background: rgba(255,255,255,0.09); border-color: rgba(193,68,14,0.4); transform: translateX(4px); }
+.cl-icon { width: 42px; height: 42px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+.cl-red{background:rgba(193,68,14,0.2);color:var(--accent2)}
+.cl-gold{background:rgba(196,154,60,0.15);color:var(--gold)}
+.cl-blue{background:rgba(30,78,140,0.2);color:#6da3f5}
+.cl-green{background:rgba(46,107,79,0.2);color:#5dba8e}
+.cl-purple{background:rgba(120,60,180,0.2);color:#c07aff}
+.cl-label { font-size: 0.7rem; color: rgba(255,255,255,0.35); text-transform: uppercase; letter-spacing: 0.1em; }
+.cl-value { font-size: 0.9rem; font-weight: 500; }
+
+/* RESUME DOWNLOAD BANNER */
+.resume-banner {
+  background: linear-gradient(135deg, var(--gold) 0%, #e8b84b 100%);
+  padding: 2.5rem 6rem;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 2rem;
+}
+.resume-banner-left h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 700; color: var(--dark); margin-bottom: 0.3rem; }
+.resume-banner-left p { font-size: 0.85rem; color: rgba(18,16,14,0.6); }
+.btn-download { display: inline-flex; align-items: center; gap: 0.8rem; background: var(--dark); color: #fff; padding: 1rem 2.2rem; text-decoration: none; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; border-radius: 2px; transition: all 0.25s; white-space: nowrap; }
+.btn-download:hover { background: var(--accent); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+
+/* FOOTER */
+footer { background: #0a0806; padding: 1.5rem 6rem; display: flex; justify-content: space-between; align-items: center; }
+.footer-copy { color: rgba(255,255,255,0.25); font-size: 0.75rem; letter-spacing: 0.08em; }
+.footer-love { color: rgba(255,255,255,0.2); font-size: 0.72rem; }
+.footer-love span { color: var(--accent); }
+
+/* ANIMATIONS */
+.fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+.hero-left > * { animation: fadeUp 0.7s ease both; }
+@keyframes fadeUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+.hero-badge{animation-delay:.1s} .hero-name{animation-delay:.2s} .hero-tagline{animation-delay:.3s}
+.typewriter-wrap{animation-delay:.4s} .hero-summary{animation-delay:.5s}
+.hero-stats{animation-delay:.6s} .hero-actions{animation-delay:.7s}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  nav{padding:1rem 2rem}
+  .hero{grid-template-columns:1fr}
+  .hero-right{min-height:420px}
+  .hero-left{padding:4rem 2rem}
+  .section{padding:4rem 2rem}
+  .achievements-top-grid{grid-template-columns:1fr 1fr}
+  .achievements-bottom-grid{grid-template-columns:repeat(2,1fr)}
+  .exp-grid{grid-template-columns:1fr}
+  .portfolio-grid{grid-template-columns:1fr 1fr}
+  .skills-layout{grid-template-columns:1fr}
+  .industries-grid{grid-template-columns:repeat(2,1fr)}
+  .clients-grid{grid-template-columns:repeat(2,1fr)}
+  .contact-inner{grid-template-columns:1fr;gap:3rem}
+  .contact-section{padding:4rem 2rem}
+  .resume-banner{flex-direction:column;text-align:center;padding:2rem}
+  footer{flex-direction:column;gap:.5rem;text-align:center;padding:1.2rem 2rem}
+  .about-grid{grid-template-columns:1fr;gap:2rem}
+}
+@media(max-width:640px){
+  nav{padding:.8rem 1.2rem}
+  .nav-links{display:none}
+  .portfolio-grid{grid-template-columns:1fr}
+  .achievements-top-grid{grid-template-columns:1fr}
+  .achievements-bottom-grid{grid-template-columns:1fr 1fr}
+  .hero-stats{gap:1.5rem}
+}
+</style>
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a class="nav-logo" href="#">Ekta <span>Kumrawat</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#achievements">Awards</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#clients">Clients</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-text">Write</div>
+  <div class="hero-left">
+    <div class="hero-badge">
+      <i class="fas fa-circle" style="font-size:.45rem;"></i>
+      Available for Freelance Projects
+    </div>
+    <h1 class="hero-name">Ekta<em>Kumrawat</em></h1>
+    <p class="hero-tagline">Senior Content Writer & SEO Specialist</p>
+    <div class="typewriter-wrap">
+      <i class="fas fa-pen-fancy"></i>
+      I craft&nbsp;<span id="typewriter"></span><span class="cursor-blink">|</span>
+    </div>
+    <p class="hero-summary">5+ years of transforming ideas into compelling narratives that rank on Google, connect with audiences, and drive real business growth. From technical docs to viral blogs — words are my superpower.</p>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Years Writing</span></div>
+      <div class="stat"><span class="stat-num">40%</span><span class="stat-label">Traffic Boost</span></div>
+      <div class="stat"><span class="stat-num">13+</span><span class="stat-label">Active Clients</span></div>
+      <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Articles Written</span></div>
+    </div>
+    <div class="hero-actions">
+      <a href="#portfolio" class="btn-primary"><i class="fas fa-eye"></i> View My Work</a>
+      <a href="mailto:kumrawatekta@gmail.com?subject=Project%20Inquiry%20from%20Portfolio&body=Hi%20Ekta%2C%0A%0AI%20visited%20your%20portfolio%20and%20I%27m%20interested%20in%20working%20with%20you.%0A%0AProject%20Details%3A%0A%0ALooking%20forward%20to%20hearing%20from%20you!" class="btn-outline"><i class="fas fa-paper-plane"></i> Let's Talk</a>
+      <a href="Ekta_Resume_Senior_Content_Writer.pdf" download="Ekta_Kumrawat_Resume.pdf" class="btn-resume"><i class="fas fa-download"></i> Resume</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-right-pattern"></div>
+    <div class="hero-right-content">
+      <div class="info-card">
+        <div class="info-icon ic-gold"><i class="fas fa-trophy"></i></div>
+        <div><p class="info-card-title">Best Content Writer 2025</p><p class="info-card-sub">Awarded for exceptional content excellence</p></div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon ic-red"><i class="fas fa-chart-line"></i></div>
+        <div><p class="info-card-title">40% Organic Traffic Growth</p><p class="info-card-sub">Via strategic SEO & keyword targeting</p></div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon ic-green"><i class="fas fa-robot"></i></div>
+        <div><p class="info-card-title">AI-Mode Search Rankings</p><p class="info-card-sub">Blogs ranking in Google's AI-Mode results</p></div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon ic-blue"><i class="fas fa-users"></i></div>
+        <div><p class="info-card-title">Team Lead & Mentor</p><p class="info-card-sub">Managing & growing a content writing team</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-bar">
+  <div class="marquee-track" id="marqueeTrack"></div>
+</div>
+
+<!-- RESUME DOWNLOAD BANNER -->
+<div class="resume-banner" id="resume">
+  <div class="resume-banner-left">
+    <h3><i class="fas fa-file-alt" style="color:var(--dark); margin-right:0.5rem;"></i> Download My Resume</h3>
+    <p>Get the full PDF version of Ekta's CV — experience, skills, education, achievements & more.</p>
+  </div>
+  <a href="Ekta_Resume_Senior_Content_Writer.pdf" download="Ekta_Kumrawat_Resume.pdf" class="btn-download">
+    <i class="fas fa-download"></i> Download Resume PDF
+  </a>
+</div>
+
+<!-- ABOUT -->
+<section class="about section" id="about">
+  <div class="about-grid">
+    <div class="about-text fade-up">
+      <div class="section-tag"><i class="fas fa-user"></i> About Me</div>
+      <h2 class="section-title" style="margin-bottom:1.5rem;">The Story Behind<br><em style="font-style:italic;color:var(--accent);">Every Word</em></h2>
+      <p>I'm Ekta Kumrawat — a Senior Content Writer based in Jaipur, India, with a deep passion for storytelling that serves a purpose. I don't just write content; I craft experiences that resonate with readers and perform on search engines.</p>
+      <p>With a background in Computer Applications and 5+ years across diverse industries, I bring both technical understanding and creative flair needed to produce content that truly works.</p>
+      <p>Whether it's a 3,000-word SEO blog, a crisp service page, a technical user manual, or a persuasive ad copy — I approach every project with the same dedication: research deeply, write clearly, and optimise relentlessly.</p>
+    </div>
+    <div class="fade-up" style="transition-delay:.2s">
+      <div class="about-traits">
+        <div class="trait"><i class="fas fa-search"></i><div><p class="trait-text">Research-First Approach</p><p class="trait-sub">Every article backed by thorough research & data</p></div></div>
+        <div class="trait"><i class="fas fa-bullseye"></i><div><p class="trait-text">SEO-Driven Strategy</p><p class="trait-sub">Content that ranks on Google and drives traffic</p></div></div>
+        <div class="trait"><i class="fas fa-palette"></i><div><p class="trait-text">Adaptive Brand Voice</p><p class="trait-sub">Tailored tone for every brand and audience</p></div></div>
+        <div class="trait"><i class="fas fa-clock"></i><div><p class="trait-text">Always On-Time</p><p class="trait-sub">Reliable delivery with zero compromise on quality</p></div></div>
+        <div class="trait"><i class="fas fa-globe"></i><div><p class="trait-text">Multi-Industry Expertise</p><p class="trait-sub">Healthcare, Tech, Luxury, Real Estate, Food & more</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS (full grid) -->
+<section class="achievements section" id="achievements">
+  <div class="section-tag"><i class="fas fa-medal"></i> Recognition</div>
+  <h2 class="section-title">Awards & Achievements</h2>
+
+  <!-- TOP ROW: 3 award cards -->
+  <div class="achievements-top-grid fade-up">
+    <div class="ach-card">
+      <div class="ach-icon ach-icon-gold"><i class="fas fa-trophy"></i></div>
+      <p class="ach-label lbl-gold">Top Award · 2025</p>
+      <h3 class="ach-title">Best Content Writer of the Year</h3>
+      <p class="ach-desc">Awarded for exceptional content performance, creativity, and consistent delivery of SEO-driven results that elevated brand authority across competitive digital niches.</p>
+      <span class="ach-big-number">01</span>
+    </div>
+    <div class="ach-card alt">
+      <div class="ach-icon ach-icon-red"><i class="fas fa-star"></i></div>
+      <p class="ach-label lbl-red">Performance · Appraisal</p>
+      <h3 class="ach-title">4 out of 5 Performance Rating</h3>
+      <p class="ach-desc">Recognised in the latest performance appraisal for outstanding creativity, precision, and attention to detail with measurable impact on organic search visibility.</p>
+      <span class="ach-big-number">02</span>
+    </div>
+    <div class="ach-card alt2">
+      <div class="ach-icon ach-icon-green"><i class="fas fa-calendar-check"></i></div>
+      <p class="ach-label lbl-green">Consistency · 3× Recognition</p>
+      <h3 class="ach-title">Employee of the Month — 3 Times</h3>
+      <p class="ach-desc">Earned three Employee of the Month accolades for consistently delivering high-quality content and making significant contributions to marketing success.</p>
+      <span class="ach-big-number">03</span>
+    </div>
+  </div>
+
+  <!-- BOTTOM ROW: 4 stats -->
+  <div class="achievements-bottom-grid fade-up" style="transition-delay:.3s">
+    <div class="ach-stat-box"><div class="ach-stat-num">40%</div><p class="ach-stat-label">Organic Traffic Increase</p></div>
+    <div class="ach-stat-box"><div class="ach-stat-num">5+</div><p class="ach-stat-label">Years of Excellence</p></div>
+    <div class="ach-stat-box"><div class="ach-stat-num">500+</div><p class="ach-stat-label">Articles Published</p></div>
+    <div class="ach-stat-box"><div class="ach-stat-num">13+</div><p class="ach-stat-label">Brands Managed</p></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience section" id="experience">
+  <div class="section-tag"><i class="fas fa-briefcase"></i> Career</div>
+  <h2 class="section-title">Work Experience</h2>
+  <div class="exp-grid fade-up">
+    <div class="exp-card current">
+      <span class="exp-badge badge-current"><i class="fas fa-circle" style="font-size:.4rem;"></i> Current Role</span>
+      <h3 class="exp-role">Senior Content Writer</h3>
+      <p class="exp-company"><i class="fas fa-building"></i> Panoptic Infotech Pvt Ltd</p>
+      <p class="exp-date"><i class="fas fa-calendar-alt"></i> July 2024 – Present</p>
+      <ul class="exp-highlights">
+        <li>Leading end-to-end content strategy for SEO blogs, webpages & marketing</li>
+        <li>Boosted organic traffic by ~40% through strategic keyword targeting</li>
+        <li>Developed technical documentation: user manuals & product guides</li>
+        <li>Managing & mentoring the full content writing team</li>
+        <li>Publishing blogs ranking in Google's AI-Mode search results</li>
+        <li>Collaborating cross-functionally with SEO, marketing & tech teams</li>
+      </ul>
+    </div>
+    <div class="exp-card">
+      <span class="exp-badge badge-past"><i class="fas fa-pen"></i> Content Writer</span>
+      <h3 class="exp-role">Content Writer</h3>
+      <p class="exp-company"><i class="fas fa-building"></i> Reinvent Digital</p>
+      <p class="exp-date"><i class="fas fa-calendar-alt"></i> July 2022 – July 2024</p>
+      <ul class="exp-highlights">
+        <li>SEO content across healthcare, IT, food, fashion, jewellery & e-commerce</li>
+        <li>LinkedIn newsletters, guest posts, press releases, PPC copies</li>
+        <li>Leveraged AI tools for data-driven content research</li>
+        <li>Managed multiple projects ensuring timely, quality delivery</li>
+      </ul>
+    </div>
+    <div class="exp-card">
+      <span class="exp-badge badge-past"><i class="fas fa-pen"></i> Content Writer</span>
+      <h3 class="exp-role">Content Writer</h3>
+      <p class="exp-company"><i class="fas fa-building"></i> i4 Consulting Pvt Ltd</p>
+      <p class="exp-date"><i class="fas fa-calendar-alt"></i> December 2021 – June 2022</p>
+      <ul class="exp-highlights">
+        <li>Blogs, service pages, social media, guest posts & web 2.0 content</li>
+        <li>Developed SEO strategies to boost brand visibility</li>
+        <li>Full website audit & content revamp for improved SEO engagement</li>
+      </ul>
+    </div>
+    <div class="exp-card">
+      <span class="exp-badge badge-past"><i class="fas fa-laptop-code"></i> Technical</span>
+      <h3 class="exp-role">Technical Content Writer</h3>
+      <p class="exp-company"><i class="fas fa-building"></i> The NineHertz</p>
+      <p class="exp-date"><i class="fas fa-calendar-alt"></i> February 2021 – December 2021</p>
+      <ul class="exp-highlights">
+        <li>Blogs, guest posts, press releases & website copy on emerging tech</li>
+        <li>Researched cutting-edge technologies for authoritative content</li>
+        <li>Collaborated on content strategies and detailed case studies</li>
+      </ul>
+    </div>
+    <div class="exp-card">
+      <span class="exp-badge badge-past"><i class="fas fa-seedling"></i> First Role</span>
+      <h3 class="exp-role">Content Writer Executive</h3>
+      <p class="exp-company"><i class="fas fa-building"></i> Eonxis IT Solutions</p>
+      <p class="exp-date"><i class="fas fa-calendar-alt"></i> August 2020 – February 2021</p>
+      <ul class="exp-highlights">
+        <li>SEO-friendly content for websites, blogs & off-page materials</li>
+        <li>Market research & competitor analysis for brand awareness campaigns</li>
+      </ul>
+    </div>
+    <div class="exp-card" style="display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;gap:1rem;min-height:200px;background:linear-gradient(135deg,rgba(193,68,14,0.04),rgba(196,154,60,0.04));border:2px dashed var(--warm-mid);">
+      <span style="font-size:2.5rem;">🎓</span>
+      <div>
+        <p class="exp-role" style="font-size:1.1rem;">BCA Graduate</p>
+        <p class="exp-company" style="justify-content:center;"><i class="fas fa-university"></i> Kanoria PG Mahila Mahavidyalaya</p>
+        <p class="exp-date" style="justify-content:center;"><i class="fas fa-calendar-alt"></i> 2016 – 2018</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="portfolio section" id="portfolio">
+  <div class="section-tag"><i class="fas fa-pen-nib"></i> My Work</div>
+  <h2 class="section-title">Published Portfolio</h2>
+  <p style="color:var(--muted);margin-top:.5rem;font-size:.9rem;">Click any card to read the live article ↗</p>
+  <div class="portfolio-filter fade-up">
+    <button class="filter-btn active" onclick="filterCards('all',this)">All Work</button>
+    <button class="filter-btn" onclick="filterCards('tech',this)">Tech & Apps</button>
+    <button class="filter-btn" onclick="filterCards('health',this)">Healthcare</button>
+    <button class="filter-btn" onclick="filterCards('luxury',this)">Luxury & Lifestyle</button>
+    <button class="filter-btn" onclick="filterCards('doc',this)">Docs & Releases</button>
+  </div>
+  <div class="portfolio-grid fade-up" style="transition-delay:.2s" id="portfolioGrid">
+    <a class="portfolio-card" data-cat="tech" href="https://theninehertz.com/blog/how-to/develop-home-service-app-like-urban-company-urbanclap" target="_blank" rel="noopener">
+      <div class="card-top"><span class="card-category-badge cat-tech"><i class="fas fa-mobile-alt"></i> Tech · App Dev</span><p class="card-title">How to Develop a Home Service App Like Urban Company</p></div>
+      <div class="card-bottom"><span class="card-domain"><i class="fas fa-globe"></i> theninehertz.com</span><div class="card-arrow"><i class="fas fa-arrow-right"></i></div></div>
+    </a>
+    <a class="portfolio-card" data-cat="tech" href="https://theninehertz.com/blog/how-to/make-an-app-like-snapchat" target="_blank" rel="noopener">
+      <div class="card-top"><span class="card-category-badge cat-tech"><i class="fas fa-camera"></i> Tech · Social Media</span><p class="card-title">How to Make an App Like Snapchat</p></div>
+      <div class="card-bottom"><span class="card-domain"><i class="fas fa-globe"></i> theninehertz.com</span><div class="card-arrow"><i class="fas fa-arrow-right"></i></div></div>
+    </a>
+    <a class="portfolio-card" data-cat="tech" href="https://theninehertz.com/blog/how-to/build-personal-finance-app-like-mint" target="_blank" rel="noopener">
+      <div class="card-top"><span class="card-category-badge cat-tech"><i class="fas fa-wallet"></i> Tech · Fintech</span><p class="card-title">How to Build a Personal Finance App Like Mint</p></div>
+      <div class="card-bottom"><span class="card-domain"><i class="fas fa-globe"></i> theninehertz.com</span><div class="card-arrow"><i class="fas fa-arrow-right"></i></div></div>
+    </a>
+    <a class="portfolio-card" data-cat="tech" href="https://theninehertz.com/services/web-development-company/laravel" target="_blank" rel="noopener">
+      <div class="card-top"><span class="card-category-badge cat-tech"><i class="fas fa-code"></i> Tech · Service Page</span><p class="card-title">Laravel Web Development Services Page</p></div>
+      <div class="card-bottom"><span class="card-domain"><i class="fas fa-globe"></i> theninehertz.com</span><div class="card-arrow"><i class="fas fa-arrow-right"></i></div></div>
+    </a>
+    <a class="portfolio-card" data-cat="health" href="https://elitedentalstudio.co.in/unlocking-benefits-of-immediate-dental-implant/" target="_blank" rel="noopener">
+      <div class="card-top"><span class="card-category-badge cat-health"><i class="fas fa-tooth"></i> Healthcare · Dental</span><p class="card-title">Unlocking the Benefits of Immediate Dental Implants</p></div>
+      <div class="card-bottom"><span class="card-domain"><i class="fas fa-globe"></i> elitedentalstudio.co.in</span><div class="card-arrow"><i class="fas fa-arrow-right"></i></div></div>
+    </a>
+    <a class="portfolio-card" data-cat="health" href="https://www.reinventdigital.com/dentists-cant-just-rely-on-word-of-mouth-to-get-more-patients/" target="_blank" rel="noopener">
+      <div class="card-top"><span class="card-category-badge cat-health"><i class="fas fa-hospital"></i> Healthcare · Marketing</span><p class="card-title">Why Dentists Can't Rely on Word-of-Mouth to Get Patients</p></div>
+      <div class="card-bottom"><span class="card-domain"><i class="fas fa-globe"></i> reinventdigital.com</span><div class="card-arrow"><i class="fas fa-arrow-right"></i></div></div>
+    </a>
+    <a class="portfolio-card" data-cat="health" href="https://psrihospital.com/robotic-surgery/" target="_blank" rel="noopener">
+      <div class="card-top"><span class="card-category-badge cat-health"><i class="fas fa-robot"></i> Healthcare · Service Page</span><p class="card-title">Robotic Surgery Services — PSRI Hospital</p></div>
+      <div class="card-bottom"><span class="card-domain"><i class="fas fa-globe"></i> psrihospital.com</span><div class="card-arrow"><i class="fas fa-arrow-right"></i></div></div>
+    </a>
+    <a class="portfolio-card" data-cat="health" href="https://elitedentalstudio.co.in/" target="_blank" rel="noopener">
+      <div class="card-top"><span class="card-category-badge cat-health"><i class="fas fa-teeth"></i> Healthcare · Full Website</span><p class="card-title">Elite Dental Studio — Complete Website Copy</p></div>
+      <div class="card-bottom"><span class="card-domain"><i class="fas fa-globe"></i> elitedentalstudio.co.in</span><div class="card-arrow"><i class="fas fa-arrow-right"></i></div></div>
+    </a>
+    <a class="portfolio-card" data-cat="luxury" href="https://www.kgkgroup.com/discover-worlds-top-5-rarest-gemstones-earth/" target="_blank" rel="noopener">
+      <div class="card-top"><span class="card-category-badge cat-luxury"><i class="fas fa-gem"></i> Luxury · Jewellery</span><p class="card-title">Discover the World's Top 5 Rarest Gemstones on Earth</p></div>
+      <div class="card-bottom"><span class="card-domain"><i class="fas fa-globe"></i> kgkgroup.com</span><div class="card-arrow"><i class="fas fa-arrow-right"></i></div></div>
+    </a>
+    <a class="portfolio-card" data-cat="luxury" href="https://nayeshamills.com/blogs/recipes/dum-aloo-recipe-in-kachi-ghani-mustard-oil" target="_blank" rel="noopener">
+      <div class="card-top"><span class="card-category-badge cat-food"><i class="fas fa-utensils"></i> Food · Recipe Blog</span><p class="card-title">Dum Aloo Recipe in Kachi Ghani Mustard Oil</p></div>
+      <div class="card-bottom"><span class="card-domain"><i class="fas fa-globe"></i> nayeshamills.com</span><div class="card-arrow"><i class="fas fa-arrow-right"></i></div></div>
+    </a>
+    <a class="portfolio-card" data-cat="luxury" href="https://www.pawankaushik.com/blog/2021/05/14/planning-to-live-in-a-shermukhi-plot-here-is-what-you-must-do-before-beginning/" target="_blank" rel="noopener">
+      <div class="card-top"><span class="card-category-badge cat-realestate"><i class="fas fa-home"></i> Real Estate · Vastu</span><p class="card-title">Planning to Live in a Shermukhi Plot? Here's What to Know</p></div>
+      <div class="card-bottom"><span class="card-domain"><i class="fas fa-globe"></i> pawankaushik.com</span><div class="card-arrow"><i class="fas fa-arrow-right"></i></div></div>
+    </a>
+    <a class="portfolio-card" data-cat="doc" href="https://docs.google.com/document/d/1E0ii3Qoaa2EakNzHgJm3FM7CCvQkkIpUTpEnOdB16VI/edit#heading=h.qppjfswjiq9s" target="_blank" rel="noopener">
+      <div class="card-top"><span class="card-category-badge cat-doc"><i class="fas fa-file-alt"></i> Press Release</span><p class="card-title">Professional Press Release Sample</p></div>
+      <div class="card-bottom"><span class="card-domain"><i class="fab fa-google"></i> Google Docs</span><div class="card-arrow"><i class="fas fa-arrow-right"></i></div></div>
+    </a>
+    <a class="portfolio-card" data-cat="doc" href="https://docs.google.com/document/d/1PlGxGcqKz_vV3Yrc6V4ARb5bOlOx2lCDfB817s6ynKg/edit" target="_blank" rel="noopener">
+      <div class="card-top"><span class="card-category-badge cat-doc"><i class="fas fa-briefcase"></i> Brand Portfolio</span><p class="card-title">Brand Portfolio Creation — Client Sample</p></div>
+      <div class="card-bottom"><span class="card-domain"><i class="fab fa-google"></i> Google Docs</span><div class="card-arrow"><i class="fas fa-arrow-right"></i></div></div>
+    </a>
+    <a class="portfolio-card" data-cat="doc" href="https://docs.google.com/document/d/1yf9PBhQLa66NZRlrHGCfqG_sdQUdpML5fF8txSq78bg/edit" target="_blank" rel="noopener">
+      <div class="card-top"><span class="card-category-badge cat-doc"><i class="fas fa-scroll"></i> Long-form Article</span><p class="card-title">Long-form SEO Content Sample</p></div>
+      <div class="card-bottom"><span class="card-domain"><i class="fab fa-google"></i> Google Docs</span><div class="card-arrow"><i class="fas fa-arrow-right"></i></div></div>
+    </a>
+    <a class="portfolio-card" data-cat="doc" href="https://docs.google.com/document/d/123DiC8r3gfJvvdpP7geXGJYnmDdLT7CTUa3nFO03dI/edit#heading=h.6bau6sf438pr" target="_blank" rel="noopener">
+      <div class="card-top"><span class="card-category-badge cat-doc"><i class="fas fa-folder-open"></i> Brand Portfolio</span><p class="card-title">Extended Brand Portfolio Sample</p></div>
+      <div class="card-bottom"><span class="card-domain"><i class="fab fa-google"></i> Google Docs</span><div class="card-arrow"><i class="fas fa-arrow-right"></i></div></div>
+    </a>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="industries section">
+  <div class="section-tag"><i class="fas fa-layer-group"></i> Expertise</div>
+  <h2 class="section-title">Industries I Write For</h2>
+  <div class="industries-grid fade-up">
+    <div class="industry-card"><span class="industry-icon">🏥</span><p class="industry-name">Healthcare</p><p class="industry-desc">Hospitals, dental, surgical</p></div>
+    <div class="industry-card"><span class="industry-icon">💻</span><p class="industry-name">Technology & IT</p><p class="industry-desc">Apps, software, SaaS</p></div>
+    <div class="industry-card"><span class="industry-icon">💎</span><p class="industry-name">Luxury & Jewellery</p><p class="industry-desc">Gems, fashion, lifestyle</p></div>
+    <div class="industry-card"><span class="industry-icon">🍽️</span><p class="industry-name">Food & Lifestyle</p><p class="industry-desc">Recipes, brands, FMCG</p></div>
+    <div class="industry-card"><span class="industry-icon">🏠</span><p class="industry-name">Real Estate</p><p class="industry-desc">Property, Vastu, interior</p></div>
+    <div class="industry-card"><span class="industry-icon">🎓</span><p class="industry-name">Education</p><p class="industry-desc">Universities, edtech</p></div>
+    <div class="industry-card"><span class="industry-icon">🛒</span><p class="industry-name">E-commerce</p><p class="industry-desc">Retail, D2C, gift brands</p></div>
+    <div class="industry-card"><span class="industry-icon">📈</span><p class="industry-name">Digital Marketing</p><p class="industry-desc">SEO, PPC, social media</p></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills-section section" id="skills">
+  <div class="section-tag"><i class="fas fa-tools"></i> Capabilities</div>
+  <h2 class="section-title" style="margin-bottom:3rem;">Skills & Expertise</h2>
+  <div class="skills-layout fade-up">
+    <div class="skills-group">
+      <div class="skills-group-header"><div class="skills-group-icon sg-red"><i class="fas fa-pen"></i></div><h3>Writing & Content</h3></div>
+      <div class="skill-item"><div class="skill-row"><span class="skill-name">SEO Blog & Article Writing</span><span class="skill-pct">98%</span></div><div class="skill-bar"><div class="skill-fill" data-width="98"></div></div></div>
+      <div class="skill-item"><div class="skill-row"><span class="skill-name">Copywriting & Web Content</span><span class="skill-pct">95%</span></div><div class="skill-bar"><div class="skill-fill" data-width="95"></div></div></div>
+      <div class="skill-item"><div class="skill-row"><span class="skill-name">Technical Documentation</span><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+      <div class="skill-item"><div class="skill-row"><span class="skill-name">Press Releases & PR Writing</span><span class="skill-pct">92%</span></div><div class="skill-bar"><div class="skill-fill" data-width="92"></div></div></div>
+      <div class="skill-item"><div class="skill-row"><span class="skill-name">Editing & Proofreading</span><span class="skill-pct">97%</span></div><div class="skill-bar"><div class="skill-fill" data-width="97"></div></div></div>
+    </div>
+    <div class="skills-group">
+      <div class="skills-group-header"><div class="skills-group-icon sg-gold"><i class="fas fa-chart-bar"></i></div><h3>Strategy & Tools</h3></div>
+      <div class="skill-item"><div class="skill-row"><span class="skill-name">SEO Strategy & Keyword Research</span><span class="skill-pct">93%</span></div><div class="skill-bar"><div class="skill-fill" data-width="93"></div></div></div>
+      <div class="skill-item"><div class="skill-row"><span class="skill-name">Content Strategy & Planning</span><span class="skill-pct">91%</span></div><div class="skill-bar"><div class="skill-fill" data-width="91"></div></div></div>
+      <div class="skill-item"><div class="skill-row"><span class="skill-name">Research & Competitor Analysis</span><span class="skill-pct">94%</span></div><div class="skill-bar"><div class="skill-fill" data-width="94"></div></div></div>
+      <div class="skill-item"><div class="skill-row"><span class="skill-name">CMS & WordPress</span><span class="skill-pct">88%</span></div><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
+      <div class="skill-item"><div class="skill-row"><span class="skill-name">AI Tools for Content</span><span class="skill-pct">89%</span></div><div class="skill-bar"><div class="skill-fill" data-width="89"></div></div></div>
+    </div>
+  </div>
+  <div class="tools-grid fade-up" style="transition-delay:.3s">
+    <span class="tool-tag"><i class="fab fa-wordpress"></i> WordPress</span>
+    <span class="tool-tag"><i class="fas fa-search"></i> Google Search Console</span>
+    <span class="tool-tag"><i class="fas fa-chart-area"></i> Google Analytics</span>
+    <span class="tool-tag"><i class="fas fa-rocket"></i> Yoast SEO</span>
+    <span class="tool-tag"><i class="fas fa-brain"></i> ChatGPT & AI Tools</span>
+    <span class="tool-tag"><i class="fab fa-microsoft"></i> MS Office</span>
+    <span class="tool-tag"><i class="fab fa-google"></i> Google Docs</span>
+    <span class="tool-tag"><i class="fab fa-trello"></i> Trello</span>
+    <span class="tool-tag"><i class="fab fa-linkedin"></i> LinkedIn Newsletter</span>
+    <span class="tool-tag"><i class="fas fa-link"></i> Ahrefs / SEMrush</span>
+    <span class="tool-tag"><i class="fas fa-spell-check"></i> Grammarly</span>
+    <span class="tool-tag"><i class="fas fa-copy"></i> Copyscape</span>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section class="clients-section section" id="clients">
+  <div class="section-tag"><i class="fas fa-handshake"></i> Current Clients</div>
+  <h2 class="section-title">Brands I Write For</h2>
+  <p class="clients-subtitle">Actively managing content for 13+ brands across multiple industries</p>
+  <div class="clients-grid fade-up">
+    <a class="client-item" href="https://www.ailbsindia.com/" target="_blank" rel="noopener"><span class="client-icon">🏫</span><span class="client-name">AILBS India</span></a>
+    <a class="client-item" href="https://psrihospital.com/" target="_blank" rel="noopener"><span class="client-icon">🏥</span><span class="client-name">PSRI Hospital</span></a>
+    <a class="client-item" href="https://www.kgkgroup.com/" target="_blank" rel="noopener"><span class="client-icon">💎</span><span class="client-name">KGK Group</span></a>
+    <a class="client-item" href="https://www.reinventdigital.com/" target="_blank" rel="noopener"><span class="client-icon">📈</span><span class="client-name">Reinvent Digital</span></a>
+    <a class="client-item" href="https://radiantdentalcare.in/" target="_blank" rel="noopener"><span class="client-icon">🦷</span><span class="client-name">Radiant Dental Care</span></a>
+    <a class="client-item" href="https://nayeshamills.com/" target="_blank" rel="noopener"><span class="client-icon">🌾</span><span class="client-name">Nayesha Mills</span></a>
+    <a class="client-item" href="https://sangamuniversity.ac.in/" target="_blank" rel="noopener"><span class="client-icon">🎓</span><span class="client-name">Sangam University</span></a>
+    <a class="client-item" href="https://jindalbricks.in/" target="_blank" rel="noopener"><span class="client-icon">🏗️</span><span class="client-name">Jindal Bricks</span></a>
+    <a class="client-item" href="https://confettigifts.in/" target="_blank" rel="noopener"><span class="client-icon">🎁</span><span class="client-name">Confetti Gifts</span></a>
+    <a class="client-item" href="https://rainandrainbow.shop/" target="_blank" rel="noopener"><span class="client-icon">🌈</span><span class="client-name">Rain & Rainbow</span></a>
+    <a class="client-item" href="https://insightsopinion.com/" target="_blank" rel="noopener"><span class="client-icon">🔍</span><span class="client-name">Insights Opinion</span></a>
+    <a class="client-item" href="https://www.pawankaushik.com/" target="_blank" rel="noopener"><span class="client-icon">🏠</span><span class="client-name">Pawan Kaushik</span></a>
+    <a class="client-item" href="https://softartsolutionsinc.com/" target="_blank" rel="noopener"><span class="client-icon">💻</span><span class="client-name">Soft Art Solutions</span></a>
+    <div class="client-item" style="cursor:default;"><span class="client-icon" style="font-size:1.5rem;">+</span><span class="client-name">& Growing...</span></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div class="contact-left fade-up">
+      <div class="section-tag"><i class="fas fa-envelope"></i> Get in Touch</div>
+      <h2 class="section-title">Let's Create<br><em style="color:var(--accent2);font-style:italic;">Something Great</em></h2>
+      <p class="contact-desc" style="margin-top:1.5rem;">
+        Looking for content that doesn't just look good — but ranks, converts, and actually gets read? I'd love to hear about your project.
+        <br><br>Whether it's a single blog post or a full content strategy — I'm here to help your brand find its voice.
+      </p>
+      <div class="contact-action-btns">
+        <a href="mailto:kumrawatekta@gmail.com?subject=Project%20Inquiry%20from%20Portfolio&body=Hi%20Ekta%2C%0A%0AI%20visited%20your%20portfolio%20and%20I%27m%20interested%20in%20working%20with%20you.%0A%0AProject%20Details%3A%0A%0ALooking%20forward%20to%20hearing%20from%20you!" class="btn-primary">
+          <i class="fas fa-paper-plane"></i> Send Email on Gmail
+        </a>
+        <a href="Ekta_Resume_Senior_Content_Writer.pdf" download="Ekta_Kumrawat_Resume.pdf" class="btn-resume">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+    </div>
+    <div class="contact-links fade-up" style="transition-delay:.2s">
+      <a class="contact-link" href="mailto:kumrawatekta@gmail.com?subject=Project%20Inquiry%20from%20Portfolio&body=Hi%20Ekta%2C%0A%0AI%20visited%20your%20portfolio%20and%20I%27m%20interested%20in%20working%20with%20you.%0A%0AProject%20Details%3A%0A%0ALooking%20forward%20to%20hearing%20from%20you!">
+        <div class="cl-icon cl-red"><i class="fas fa-envelope"></i></div>
+        <div><p class="cl-label">Email — Click to Open Gmail</p><p class="cl-value">kumrawatekta@gmail.com</p></div>
+        <i class="fas fa-external-link-alt" style="margin-left:auto;color:rgba(255,255,255,0.2);font-size:.75rem;"></i>
+      </a>
+      <a class="contact-link" href="tel:+919602624355">
+        <div class="cl-icon cl-green"><i class="fas fa-phone"></i></div>
+        <div><p class="cl-label">Phone</p><p class="cl-value">+91 9602624355</p></div>
+      </a>
+      <a class="contact-link" href="https://www.linkedin.com/in/ekta-kumrawat-4a133b203" target="_blank" rel="noopener">
+        <div class="cl-icon cl-blue"><i class="fab fa-linkedin"></i></div>
+        <div><p class="cl-label">LinkedIn</p><p class="cl-value">ekta-kumrawat-4a133b203</p></div>
+        <i class="fas fa-external-link-alt" style="margin-left:auto;color:rgba(255,255,255,0.2);font-size:.75rem;"></i>
+      </a>
+      <a class="contact-link" href="Ekta_Resume_Senior_Content_Writer.pdf" download="Ekta_Kumrawat_Resume.pdf">
+        <div class="cl-icon cl-purple"><i class="fas fa-file-pdf"></i></div>
+        <div><p class="cl-label">Resume / CV</p><p class="cl-value">Click to Download PDF</p></div>
+        <i class="fas fa-download" style="margin-left:auto;color:rgba(255,255,255,0.2);font-size:.75rem;"></i>
+      </a>
+      <div class="contact-link" style="cursor:default;">
+        <div class="cl-icon cl-gold"><i class="fas fa-map-marker-alt"></i></div>
+        <div><p class="cl-label">Location</p><p class="cl-value">Jaipur, Rajasthan, India</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="footer-copy">© 2025 Ekta Kumrawat · Senior Content Writer & SEO Specialist · Jaipur, India</p>
+  <p class="footer-love">Crafted with <span>♥</span> in Jaipur</p>
+</footer>
+
+<script>
+// Custom Cursor
+const dot = document.getElementById('cursorDot');
+const ring = document.getElementById('cursorRing');
+document.addEventListener('mousemove', e => {
+  dot.style.left = e.clientX+'px'; dot.style.top = e.clientY+'px';
+  setTimeout(() => { ring.style.left = e.clientX+'px'; ring.style.top = e.clientY+'px'; }, 60);
+});
+
+// Nav scroll
+window.addEventListener('scroll', () => {
+  document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// Typewriter
+const phrases = ['SEO Blogs that Rank...','Content that Converts...','Technical Documentation...','Brand Storytelling...','Press Releases...','Words that Work.'];
+let pi=0, ci=0, del=false;
+const tw = document.getElementById('typewriter');
+function type() {
+  const cur = phrases[pi];
+  if (!del) {
+    tw.textContent = cur.substring(0, ci+1); ci++;
+    if (ci===cur.length) { del=true; setTimeout(type,1800); return; }
+    setTimeout(type, 60);
+  } else {
+    tw.textContent = cur.substring(0, ci-1); ci--;
+    if (ci===0) { del=false; pi=(pi+1)%phrases.length; }
+    setTimeout(type, 35);
+  }
+}
+setTimeout(type, 800);
+
+// Marquee
+const items=['SEO Content Writing','Blog Writing','Technical Documentation','Copywriting','Press Releases','Brand Voice','Content Strategy','Keyword Research','Web Content','Social Media','PPC Ad Copies','LinkedIn Newsletters','Editing & Proofreading'];
+const track = document.getElementById('marqueeTrack');
+[...items,...items,...items].forEach((item,i,arr)=>{
+  const s=document.createElement('span'); s.textContent=item; track.appendChild(s);
+  if(i<arr.length-1){const d=document.createElement('span'); d.className='dot'; d.textContent='●'; track.appendChild(d);}
+});
+
+// Scroll animations
+const obs = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
+},{threshold:0.1});
+document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+
+// Skill bars
+const skillObs = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.querySelectorAll('.skill-fill').forEach(b=>{ b.style.width=b.dataset.width+'%'; }); });
+},{threshold:0.3});
+document.querySelectorAll('.skills-layout').forEach(el=>skillObs.observe(el));
+
+// Portfolio filter
+function filterCards(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.portfolio-card').forEach(card=>{
+    card.style.display = (cat==='all'||card.dataset.cat===cat) ? 'flex' : 'none';
+  });
+}
+</script>
+</body>
+</html>
